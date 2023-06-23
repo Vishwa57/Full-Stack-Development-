@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>lable</title>
+    </head>
+        
+    <body>
+        <form action="https://www.facebook.com/">
+            <h1>Take me to facebook page</h1>
+            <p>Email : </p>
+            <input type="email" name="user_id" placeholder="type here" required>
+            <input type="submit" value="Submit" >
+        </form>
+
+        <!-- since we have mentioned required in email box,
+        we have to include a value, else it won't take you
+        to the fb page.
+        if we take out "required" keyword, then even if the
+        place is not filled, the submit button will take u to fb page 
+        required - mandatory field.
+        -->
+
+        <h1>lable concept</h1>
+        <!-- #Method 1 -->
+        <h2>Method 1</h2>
+        <label >
+            <p>Enter text : </p>
+            <input type="text" name="" placeholder="type here">
+        </label>
+        <label >
+            <p>Enter text : </p>
+            <input type="text" name="" id="">
+        </label>
+
+        <!-- #Method 2 (Prefered method) -->
+        <p></p>
+        <h2>Method 2</h2>
+        <label for="user_id">
+            Enter details : 
+        </label>
+        <input id = "user_id" type="text" name="" val="" >
+        <p></p>
+        <label for="loc">
+            Location :
+        </label>
+        <input id = "loc" type="text" name="" val="">
+
+        
+    </body>
+</html>
+
+<!-- 
+Email : Vishwa@gmail.com
+After entering into fb page 
+page link will be 
+https://www.facebook.com/?user_id=Vishwa%40gmail.com
+
+%40 refers @
+
+-->

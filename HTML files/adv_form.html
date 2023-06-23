@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Feedback Form</title>
+    </head>
+        
+    <body>
+        <h1>Feedback form</h1>
+        <form action="">
+            <h2>Where you reside?</h2>
+            <label for="in"> Inside India</label>
+            <input type="radio" name="loc" id="in" value = "inside">
+            <label for="out"> Outside India</label>
+            <input type="radio" name="loc" id="out" value="outside">
+
+            <!-- if we give diff word to "name" then we 
+            can select both - they don't get interlinked -->
+            
+            <h2>how is our service? Provide Rating</h2>
+            <select name="Rating" id="">
+                <option value="3"> Great </option>
+                <option value="2"> Okay </option>
+                <option value="1"> Poor </option>
+            </select>
+
+            <h2>Any feedback?</h2>
+            <textarea name="other" id="" cols="30" rows="10"></textarea>
+
+            <p></p>
+            <input type="submit">
+        </form>
+    </body>
+</html>
+
+
+<!-- for inputs
+
+outside
+Okay
+Nothing man
+
+output is
+file:///E:/Full_Stack%20Development/Practice/HTML/adv_form.html?loc=outside&Rating=2&other=Nothing+man -->
